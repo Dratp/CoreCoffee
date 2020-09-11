@@ -1,0 +1,15 @@
+﻿@model CoreCoffee.Models.WebUser
+@{
+    ViewData["Title"] = "NewUser";
+}
+
+<br /><p>Welcome @Model.Name your user ID is: @Model.ID</p>
+<p>Would you like to place an order</p>
+<br />
+<form method="post" action="/Home/WebOrder">
+    <input type="hidden" id="id" name="id" value="@Model.ID" />
+    <input type="submit" value="Yes">
+</form>
+<form method="post" action="/Home/GoodBye">
+    <input type="submit" value="No">
+</form>
