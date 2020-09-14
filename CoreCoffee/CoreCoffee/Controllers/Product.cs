@@ -22,7 +22,7 @@ namespace CoreCoffee.Controllers
             List<Products> prods;
             using (IDbConnection db = new SqlConnection("Server=7RP7Q13\\SQLEXPRESS;Database=CoreCoffee;user id=csharp;password=abc123"))
             {
-                prods = db.Query<Products>("select * from [Product]").AsList<Products>();
+                prods = db.Query<Products>("select * from [CoffeeProduct]").AsList<Products>();
             }
 
             return View(prods);
@@ -33,7 +33,7 @@ namespace CoreCoffee.Controllers
             Products prod;
             using (IDbConnection db = new SqlConnection("Server=7RP7Q13\\SQLEXPRESS;Database=CoreCoffee;user id=csharp;password=abc123"))
             {
-                prod = db.QuerySingle<Products>($"select * from [Product] where Product_id={drinkid}");
+                prod = db.QuerySingle<Products>($"select * from [CoffeeProduct] where Product_id={drinkid}");
             }
 
             return View(prod);
