@@ -1,0 +1,31 @@
+﻿@model Products
+@{
+    ViewData["Title"] = "EditItem";
+}
+
+<h2>EditItem</h2>
+<br />
+<form method="post" action="SaveItem">
+    <table>
+        <tr>
+            <td><label for="category">Category:</label></td>
+            <td><input type="text" id="category" name="category" value="@Model.Product_Category" /></td>
+        </tr>
+        <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name" value="@Model.Product_Name" /></td>
+        </tr>
+        <tr>
+            <td><label for="price">Price: $</label></td>
+            <td><input type="number" step=".01" id="price" name="price" min="0" value="@Model.Product_Price" /></td>
+        </tr>
+        <tr>
+            <td><label for="description">Description:</label></td>
+            <td><input type="text" id="description" name="description" value="@Model.Product_Description"/></td>
+        </tr>
+        <tr>
+            <td><input type="hidden" id="pid" name="pid" value="@Model.Product_id" /></td>
+        </tr>
+    </table>
+    <input type="submit" value="Save Item" />
+</form>

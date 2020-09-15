@@ -4,6 +4,8 @@
 }
 
 <h2>InventoryControl</h2>
+@ViewBag.Message
+
 
 <a href="/Admin/CreateItem">Add a new product</a>
 <br /><br />
@@ -16,8 +18,8 @@
         <td>@prod.Product_Name</td>
         <td>@prod.Product_Description</td>
         <td>@prod.Product_Price</td>
-        <td><a href="Admin/Edit?pid=@prod.Product_id">Edit</a></td>
-        <td><a href="Admin/Remove?pid=@prod.Product_id">Remove</a></td>
+        <td><a href="/Admin/EditItem?pid=@prod.Product_id">Edit</a></td>
+        <td><a href="/Admin/ConfirmRemove?pid=@prod.Product_id">Remove</a></td>
     </tr>
     }
         

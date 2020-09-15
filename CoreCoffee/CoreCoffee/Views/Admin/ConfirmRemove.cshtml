@@ -1,0 +1,15 @@
+﻿@model Products
+@{
+    ViewData["Title"] = "ConfirmRemove";
+}
+
+<h2>Confirm Remove</h2>
+<br />
+<p>Category: @Model.Product_Category</p>
+<p>Name: @Model.Product_Name</p>
+<p>Price: @Model.Product_Price</p>
+<p>Description: @Model.Product_Description</p>
+<br />
+<li>Are you sure you want to Delete this item?</li>
+<a href="/Admin/Remove?pid=@Model.Product_id">Yes</a><br />
+<a href="/Admin/InventoryControl">No</a>

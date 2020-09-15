@@ -49,6 +49,31 @@ namespace CoreCoffee.Models
             return prod;
         }
 
+        public static Products Read(long _id)
+        {
+            Products prod;
+            using (IDbConnection db = new SqlConnection("Server=7RP7Q13\\SQLEXPRESS;Database=CoreCoffee;user id=csharp;password=abc123"))
+            {
+                prod = db.Get<Products>(_id);
+            }
+            return prod;
+        }
+
+        public static void Delete(long _id)
+        {
+            using (IDbConnection db = new SqlConnection("Server=7RP7Q13\\SQLEXPRESS;Database=CoreCoffee;user id=csharp;password=abc123"))
+            {
+                db.Delete(new Products() { Product_id = _id });
+            }
+        }
+
+        public void Save()
+        {
+            using (IDbConnection db = new SqlConnection("Server=7RP7Q13\\SQLEXPRESS;Database=CoreCoffee;user id=csharp;password=abc123"))
+            {
+                db.Update(this);
+            }
+        }
 
     }
 }

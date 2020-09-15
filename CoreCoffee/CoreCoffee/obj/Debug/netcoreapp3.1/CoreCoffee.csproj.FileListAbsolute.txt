@@ -131,3 +131,5 @@ C:\DevBuild4\WebApps\CoreCoffee\CoreCoffee\CoreCoffee\obj\Debug\netcoreapp3.1\Co
 C:\DevBuild4\WebApps\CoreCoffee\CoreCoffee\CoreCoffee\obj\Debug\netcoreapp3.1\CoreCoffee.MvcApplicationPartsAssemblyInfo.cache
 C:\DevBuild4\WebApps\CoreCoffee\CoreCoffee\CoreCoffee\obj\Debug\netcoreapp3.1\Razor\Views\Admin\InventoryControl.cshtml.g.cs
 C:\DevBuild4\WebApps\CoreCoffee\CoreCoffee\CoreCoffee\obj\Debug\netcoreapp3.1\Razor\Views\Admin\CreateItem.cshtml.g.cs
+C:\DevBuild4\WebApps\CoreCoffee\CoreCoffee\CoreCoffee\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditItem.cshtml.g.cs
+C:\DevBuild4\WebApps\CoreCoffee\CoreCoffee\CoreCoffee\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ConfirmRemove.cshtml.g.cs
